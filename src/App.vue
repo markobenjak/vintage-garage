@@ -32,21 +32,21 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4 offers">
-            <img src="/src/assets/images/version2/wedding.jpeg" style="width:200px; height:180px !important"
+            <img src="/src/assets/images/version2/test/wedding.jpeg"
               class="rounded-circle shadow-lg" alt="">
 
             <h2 class="containerHeading">Vjencanja</h2>
             <p>Unajmite vozilo i vozaca za poseban dan</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 offers">
-            <img src="/src/assets/images/version2/event.jpg" style="width:200px; height:180px !important"
+            <img src="/src/assets/images/version2/test/event.jpg"
               class="rounded-circle  shadow-lg" alt="">
 
             <h2 class="containerHeading">Najam</h2>
             <p>Vozila za potrebe snimanja</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 offers">
-            <img src="/src/assets/images/version2/buba.jpg" style="width:200px; height:180px !important"
+            <img src="/src/assets/images/version2/test/buba.jpg"
               class="rounded-circle  shadow-lg" alt="">
 
             <h2 class="containerHeading">Posebne prigode</h2>
@@ -61,7 +61,7 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Citroen DS19</h2>
+            <h1 class="featurette-heading">Citroen DS19</h1>
             <p class="lead"> Predstavljen je po prvi puta 1955. godine na pariškome salonu automobila kao automobili
               budućnosti, koji je odmah bio odlično prihvaćen već prvoga dana kada je zaprimio veliki broj prednarudžbi.
             </p>
@@ -129,7 +129,7 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Citroën Traction Avant</h2>
+            <h1 class="featurette-heading">Citroën Traction Avant</h1>
             <p class="lead">Citroën Traction Avant proizveden je davne 1952. godine, a u našoj je ponudi tek nekoliko
               mjeseci. Prvi Citroënov automobil proizveden sa prednjim pogonom sa početkom proizvodnje 1935. godine,
               napravljen kao luksuzni automobil za mase. Bezvremenske linije, udobne vožnje i ogroman prostor za noge na
@@ -206,7 +206,7 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Volkswagen T1</h2>
+            <h1 class="featurette-heading">Volkswagen T1</h1>
             <p class="lead">
               Volkswagen T 1 proizveden je 1963., te je u našem vlasništvu 10 godina.
               Prva je generacija Volkswagenovog kombi vozila koji je počeo sa proizvodnjom 1950. godine. Karizmatičan i
@@ -285,7 +285,7 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Wolkswagen Buba</h2>
+            <h1 class="featurette-heading">Wolkswagen Buba</h1>
             <p class="lead">Citroën Traction Avant proizveden je davne 1952. godine, a u našoj je ponudi tek nekoliko
               mjeseci. Prvi Citroënov automobil proizveden sa prednjim pogonom sa početkom proizvodnje 1935. godine,
               napravljen kao luksuzni automobil za mase. Bezvremenske linije, udobne vožnje i ogroman prostor za noge na
@@ -409,7 +409,25 @@
 .offers {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+.offers > img{
+  margin-top: 5%;
+  padding-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.offers > p{
+  font-size: large !important;
+}
 .contact{
   color: #212529;
+}
+p, h1, h2, h3{
+  font-family: didot, serif;
+}
+@media only screen and (max-width: 750px) {
+  p{
+    font-size: medium;
+  }
 }
 </style>
