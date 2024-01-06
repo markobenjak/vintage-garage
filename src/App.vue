@@ -3,6 +3,7 @@
 
     <main>
 
+
       <div id="navCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -15,7 +16,7 @@
               <rect width="100%" height="100%" fill="#bec4c0"></rect>
             </svg>
 
-            <div class="container">
+            <div class="container nav">
               <div class="carousel-caption text-start">
                 <h1 class="navText">Vintage Vinkovic Garage.</h1>
                 <p class="navText">Some representative placeholder content for the first slide of the carousel.</p>
@@ -24,7 +25,7 @@
           </div>
 
         </div>
-      </div>
+      </div> 
 
 
       <div class="container">
@@ -33,21 +34,21 @@
         <div class="row">
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/test/wedding.jpeg"
-              class="rounded-circle shadow-lg" alt="">
+              class="rounded-circle shadow-lg imageOffers" alt="">
 
             <h2 class="containerHeading">Vjencanja</h2>
             <p>Unajmite vozilo i vozaca za poseban dan</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/test/event.jpg"
-              class="rounded-circle  shadow-lg" alt="">
+              class="rounded-circle imageOffers shadow-lg" alt="">
 
             <h2 class="containerHeading">Najam</h2>
             <p>Vozila za potrebe snimanja</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/test/buba.jpg"
-              class="rounded-circle  shadow-lg" alt="">
+              class="rounded-circle imageOffers shadow-lg" alt="">
 
             <h2 class="containerHeading">Posebne prigode</h2>
             <p>And lastly this, the third column of representative placeholder content.</p>
@@ -397,8 +398,7 @@
   color: #82786e !important;
 }
 
-.navText,
-.containerHeading {
+.navText, .containerHeading {
   color: #82786e !important;
 }
 
@@ -429,5 +429,20 @@ p, h1, h2, h3{
   p{
     font-size: medium;
   }
+  .nav{
+    margin-top: 5%;
+  }
+  .bd-placeholder-img{
+    height: 250px !important;
+  }
 }
+
+@media only screen and (min-width: 990px) and (max-width: 1300px) {
+  .imageOffers{
+    width: 250px;
+    height: 200px;
+  }
+}
+
+
 </style>
