@@ -1,8 +1,6 @@
 <template>
   <body>
-
     <main>
-
 
       <div id="navCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -27,10 +25,7 @@
         </div>
       </div> 
 
-
       <div class="container">
-
-        <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/test/wedding.jpeg"
@@ -38,25 +33,22 @@
 
             <h2 class="containerHeading">Vjencanja</h2>
             <p>Unajmite vozilo i vozaca za poseban dan</p>
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/test/event.jpg"
               class="rounded-circle imageOffers shadow-lg" alt="">
 
             <h2 class="containerHeading">Najam</h2>
             <p>Vozila za potrebe snimanja</p>
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/test/buba.jpg"
               class="rounded-circle imageOffers shadow-lg" alt="">
 
-            <h2 class="containerHeading">Posebne prigode</h2>
+            <h2 class="containerHeading">Izlozbe</h2>
             <p>And lastly this, the third column of representative placeholder content.</p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
+          </div>
+        </div>
 
         <hr class="featurette-divider">
 
@@ -336,12 +328,8 @@
           </div>
         </div>
 
-        <!-- /END THE FEATURETTES -->
+      </div>
 
-      </div><!-- /.container -->
-
-
-      <!-- FOOTER -->
       <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <div class="container pt-4">
           <div class="row">
@@ -367,13 +355,8 @@
           Created By: 
           <a class="text-dark" href="#">MB</a>
         </div>
-        <!-- Copyright -->
       </footer>
     </main>
-
-
-
-
   </body>
 </template>
 
@@ -381,7 +364,8 @@
 
 </script>
 
-<style scoped>.container {
+<style scoped>
+.container {
   margin-top: 1%;
 }
 
