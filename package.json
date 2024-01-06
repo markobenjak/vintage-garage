@@ -1,7 +1,7 @@
 {
   "name": "vintage-garage",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
