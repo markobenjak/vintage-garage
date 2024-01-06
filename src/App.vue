@@ -377,28 +377,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import CTA from './components/CTA.vue'
-import VT1 from './components/VT1.vue'
-import CDS19 from './components/CDS19.vue'
-import HOME from './components/Home.vue'
 
-const routes = {
-  '/': HOME,
-  '/CitroenTractionAvant': CTA,
-  '/VolkswagenT1': VT1,
-  '/CitroenDS19': CDS19
-}
-
-const currentPath = ref(window.location.hash)
-
-window.addEventListener('hashchange', () => {
-  currentPath.value = window.location.hash
-})
-
-const currentView = computed(() => {
-  return routes[currentPath.value.slice(1) || '/']
-})
 </script>
 
 <style scoped>.container {
