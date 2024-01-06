@@ -8,5 +8,5 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: "/vintage-garage/"
+  base: ""
 })
