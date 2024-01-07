@@ -15,9 +15,21 @@
             </svg>
 
             <div class="container nav">
-              <div class="carousel-caption text-start">
-                <h1 class="navText">Vintage Vinkovic Garage.</h1>
-                <p class="navText">Some representative placeholder content for the first slide of the carousel.</p>
+              <div class="carousel-caption text-start row justify-content-end">
+                <div class="col align-self-start">
+                  <h1 class="h1Name navText">Vintage Vinkovic Garage.</h1>
+                  <p class="navText">Some representative placeholder content for the first slide of the carousel.</p>
+                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i>@something</a>
+                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i>@something</a>
+                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i>@something</a>
+                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>13457879</a>
+                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-mailbox"></i>test@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
@@ -332,22 +344,56 @@
 
       <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <div class="container pt-4">
-          <div class="row">
-            <section class="mb-4 col-sm">
+          <div class="row align-items-center">
+            <!-- <section class="mb-4 col-sm">
+              <div class="row">
               <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
-
+                data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i>@vitnageGarage</a>
+              </div>
+              <div class="row">
               <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i></a>
-
+                data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i>@vintageGarage</a>
+              </div>
+              <div class="row">
               <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+                data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i>@vintageGarage</a>
+              </div>
+              <div class="row">
+                <p class="btn btn-link btn-floating btn-lg text-dark m-1"><i class="bi bi-phone"></i>13457879</p>
+              </div>
+              <div class="row">
+                <p class="btn btn-link btn-floating btn-lg text-dark m-1"><i class="bi bi-mailbox"></i>test@email.com</p>
+              </div>
+            </section> -->
+            <section class="mb-4 col text-dark">
+              <form  style="margin: auto">
+                <h2>Contact Us:</h2>
+                <!-- Name input -->
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="form4Example1" class="form-control" />
+                  <label class="form-label" for="form4Example1">Name</label>
+                </div>
 
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline">
+                  <input type="email" id="form4Example2" class="form-control" />
+                  <label class="form-label" for="form4Example2">E-mail</label>
+                </div>
+
+                <!-- Message input -->
+                <div data-mdb-input-init class="form-outline">
+                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                  <label class="form-label" for="form4Example3">Message</label>
+                </div>
+                
+                <!-- Submit button -->
+                <button type="button" class="form-control btn btn-primary btn-lg btn-block">Posalji</button>
+              </form>
             </section>
-            <section class="col-sm contact">
+            <!-- <section class="col-sm contact">
               <p class="btn btn-link btn-floating btn-lg text-dark m-1"><i class="bi bi-phone"></i>13457879</p>
               <p class="btn btn-link btn-floating btn-lg text-dark m-1"><i class="bi bi-mailbox"></i>test@email.com</p>
-            </section>
+            </section> -->
           </div>
         </div>
 
@@ -406,6 +452,18 @@
 .contact{
   color: #212529;
 }
+
+.bd-placeholder-img{
+    height: 200px !important;
+  }
+
+.btn{
+  padding-left: 0 !important;
+}
+.h1Name{
+  font-weight: bold;
+  font-size: 45px;
+}
 p, h1, h2, h3{
   font-family: didot, serif;
 }
@@ -417,7 +475,30 @@ p, h1, h2, h3{
     margin-top: 5%;
   }
   .bd-placeholder-img{
-    height: 250px !important;
+    height: 450px !important;
+  }
+  .h1Name{
+    font-weight: bold;
+    font-size: xx-large;
+  }
+}
+
+@media only screen and (min-width: 249px) and (max-width: 360px) {
+  .bd-placeholder-img{
+    height: 550px !important;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 520px) {
+  .bd-placeholder-img{
+    height: 320px !important;
+  }
+}
+
+
+@media only screen and (min-width: 520px) and (max-width: 1100px) {
+  .bd-placeholder-img{
+    height: 300px !important;
   }
 }
 
