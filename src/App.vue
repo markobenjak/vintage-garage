@@ -474,9 +474,6 @@ p, h1, h2, h3{
   .nav{
     margin-top: 5%;
   }
-  .bd-placeholder-img{
-    height: 450px !important;
-  }
   .h1Name{
     font-weight: bold;
     font-size: xx-large;
@@ -489,18 +486,36 @@ p, h1, h2, h3{
   }
 }
 
+@media only screen and (min-width: 360px) and (max-width: 449px) {
+  .bd-placeholder-img{
+    height: 450px !important;
+  }
+}
+
 @media only screen and (min-width: 450px) and (max-width: 520px) {
   .bd-placeholder-img{
     height: 320px !important;
   }
 }
 
-
-@media only screen and (min-width: 520px) and (max-width: 1100px) {
+@media only screen and (min-width: 521px) and (max-width: 664px) {
   .bd-placeholder-img{
-    height: 300px !important;
+    height: 320px !important;
   }
 }
+
+@media only screen and (min-width: 665px) and (max-width: 749px) {
+  .bd-placeholder-img{
+    height: 250px !important;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1100px) {
+  .bd-placeholder-img{
+    height: 250px !important;
+  }
+}
+
 
 @media only screen and (min-width: 990px) and (max-width: 1300px) {
   .imageOffers{
