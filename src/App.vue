@@ -340,6 +340,12 @@
           </div>
         </div>
 
+        <div class="alert alert-success" v-if="showAlertSuccess" id="emailAlertSuccess" role="alert">
+          {{ alertMessage }}
+        </div>
+        <div class="alert alert-danger" v-if="showAlertFail" id="emailAlertFail" role="alert">
+          {{ alertMessage }}
+        </div>
       </div>
 
       <footer class="text-center text-white" style="background-color: #f1f1f1;">
@@ -366,28 +372,34 @@
               </div>
             </section> -->
             <section class="mb-4 col text-dark">
-              <form  style="margin: auto">
+              <form ref="form" style="margin: auto">
                 <h2>Contact Us:</h2>
                 <!-- Name input -->
-                <div data-mdb-input-init class="form-outline">
-                  <input type="text" id="form4Example1" class="form-control" />
-                  <label class="form-label" for="form4Example1">Name</label>
+                <div class="">
+                  <input type="text" id="name" name="name" v-model="name" class="form-control" />
+                  <label class="form-label" for="name">Name</label>
                 </div>
 
                 <!-- Email input -->
-                <div data-mdb-input-init class="form-outline">
-                  <input type="email" id="form4Example2" class="form-control" />
-                  <label class="form-label" for="form4Example2">E-mail</label>
+                <div class="row">
+                  <div class="col">
+                    <input type="email" id="email" name="email" v-model="email" class="form-control" />
+                    <label class="form-label" for="name">Email</label>
+                  </div>
+                  <div class="col">
+                    <input type="text" id="phone" name="phone" v-model="phone" class="form-control" />
+                    <label class="form-label" for="phone">Phone</label>
+                  </div>
                 </div>
 
                 <!-- Message input -->
-                <div data-mdb-input-init class="form-outline">
-                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                  <label class="form-label" for="form4Example3">Message</label>
+                <div class="">
+                  <textarea class="form-control" id="message" v-model="message" name="message" rows="4"></textarea>
+                  <label class="form-label" for="message">Message</label>
                 </div>
                 
                 <!-- Submit button -->
-                <button type="button" class="form-control btn btn-primary btn-lg btn-block">Posalji</button>
+                <button type="button" @click="sendEmail()" data-dismiss="alert" class="form-control btn btn-primary btn-lg btn-block">Posalji</button>
               </form>
             </section>
             <!-- <section class="col-sm contact">
@@ -406,8 +418,50 @@
   </body>
 </template>
 
-<script setup>
+<script>
+import emailjs from 'emailjs-com';
+export default {
+    name: 'ContactUs',
+    data() {
+      return {
+        name: '',
+        email: '',
+        message: '',
+        phone: '',
+        alertMessage: '',
+        showAlertSuccess: false,
+        showAlertFail: false
+      }
+    },
+    methods: {
+      sendEmail() {
+          emailjs.sendForm(import.meta.env.VITE_EMAIL_SERVICE_ID, import.meta.env.VITE_EMAIL_TEMPLATE_ID, this.$refs.form, import.meta.env.VITE_EMAIL_USER_ID,
+          {
+            name: this.name,
+            phone: this.phone,
+            email: this.email,
+            message: this.message
+          }).then((result) => {
+            this.alertMessage = "Email uspjesno poslan. Javit cemo se u najkracem mogucem vremenu"
+            this.showAlertSuccess = true;
+          }, (error) => {
+            this.alertMessage = "fail"
+            this.showAlertFail = true;
+          });
 
+          setTimeout(() => {
+            this.showAlertSuccess = false;
+            this.showAlertFail = false;
+            this.alertMessage = '';
+            this.name = '';
+            this.email = '';
+            this.message = '';
+            this.phone = '';
+          }
+          , 5000);
+      },
+    }
+}
 </script>
 
 <style scoped>
