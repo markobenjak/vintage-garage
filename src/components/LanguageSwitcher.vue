@@ -35,7 +35,7 @@
             await router.replace({ params: { locale: newLocale } })
           } catch(e) {
             console.log(e)
-            router.push("/")
+            router.push("/vintage-garage/")
           }
         }
   

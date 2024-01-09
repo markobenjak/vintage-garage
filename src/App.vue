@@ -1,44 +1,7 @@
 <template>
   <body>
     <main>
-
-      <!-- <div id="navCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="#bec4c0"></rect>
-            </svg>
-
-            <div class="container nav">
-              <div class="carousel-caption text-start row justify-content-end">
-                <div class="col align-self-start">
-                  <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
-                  <p class="navText">Some representative placeholder content for the first slide of the carousel.</p>
-                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
-                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
-                  <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>+385912227332 Robert</a>
-                  <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>+385917620501 Ivan</a>
-                  <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-mailbox"></i>vintage.garage.vinkovic@gmail.com</a>
-                </div>
-                <LanguageSwitcher></LanguageSwitcher>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>  -->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg shadow p-3 mb-5">
         <div class="container">
           <div class="col align-self-start">
             <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
@@ -540,13 +503,6 @@ export default {
 .offers > p{
   font-size: large !important;
 }
-.contact{
-  color: #212529;
-}
-
-.bd-placeholder-img{
-    height: 200px !important;
-  }
 
 .btn{
   padding-left: 0 !important;
@@ -558,6 +514,11 @@ export default {
 p, h1, h2, h3{
   font-family: didot, serif;
 }
+
+.navbar{
+  background-color: #bec4c0;
+}
+
 @media only screen and (max-width: 750px) {
   p{
     font-size: medium;
@@ -569,76 +530,15 @@ p, h1, h2, h3{
     font-weight: bold;
     font-size: xx-large;
   }
-}
-
-@media only screen and (min-width: 249px) and (max-width: 360px) {
-  .bd-placeholder-img{
-    height: 480px !important;
-  }
   .contact{
     font-size: smaller;
   }
 }
-
-@media only screen and (min-width: 360px) and (max-width: 449px) {
-  .bd-placeholder-img{
-    height: 400px !important;
-  }
-  .contact{
-    font-size: smaller;
-  }
-}
-
-@media only screen and (min-width: 450px) and (max-width: 520px) {
-  .bd-placeholder-img{
-    height: 320px !important;
-  }
-  .contact{
-    font-size: smaller;
-  }
-}
-
-@media only screen and (min-width: 521px) and (max-width: 664px) {
-  .bd-placeholder-img{
-    height: 280px !important;
-  }
-  .contact{
-    font-size: smaller;
-  }
-}
-
-@media only screen and (min-width: 665px) and (max-width: 749px) {
-  .bd-placeholder-img{
-    height: 250px !important;
-  }
-  .contact{
-    font-size: smaller;
-  }
-}
-
-@media only screen and (min-width: 750px) and (max-width: 1100px) {
-  .bd-placeholder-img{
-    height: 400px !important;
-  }
-  .contact{
-    font-size: smaller;
-  }
-}
-
 
 @media only screen and (min-width: 990px) and (max-width: 1301px) {
   .imageOffers{
     width: 250px;
     height: 200px;
-  }
-  .bd-placeholder-img{
-    height: 300px !important;
-  }
-}
-
-@media only screen and (min-width: 1302px) and (max-width: 1529px) {
-  .bd-placeholder-img{
-    height: 250px !important;
   }
 }
 

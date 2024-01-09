@@ -6,12 +6,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_URL),
   routes: [
     {
-      path: "/:locale?",
+      path: "/vintage-garage/:locale?",
       component: RouterView,
       beforeEnter: Tr.routeMiddleware,
       children: [
         {
-          path: '',
+          path: '/vintage-garage/',
           name: 'home',
           component: HomeView
         }
