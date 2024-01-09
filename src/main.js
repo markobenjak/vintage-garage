@@ -9,9 +9,9 @@ import messages from "@intlify/unplugin-vue-i18n/messages";
 const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    locale: "hr",
-    fallbackLocale: "en",
-    availableLocales: ["en", "hr"],
+    locale: "Hrvatski",
+    fallbackLocale: "English",
+    availableLocales: ["English", "Hrvatski"],
     messages: messages,
   });
 
