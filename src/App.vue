@@ -26,7 +26,7 @@
             <img src="/src/assets/images/version2/test/wedding.jpeg"
               class="rounded-circle shadow-lg imageOffers" alt="">
 
-            <h2 class="containerHeading">{{$t('offers.weddings')}}</h2>
+            <h2 class="containerHeading">{{ $t("weddings") }}</h2>
             <p>Unajmite vozilo i vozaca za poseban dan</p>
           </div>
           <div class="col-lg-4 offers">
@@ -397,12 +397,16 @@
         <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           <div class="container">
             <div class="row">
-            <div class="col">
-              Created By: 
-              <a class="text-dark" href="#">MB</a>
+              <div class="col">
+                Created By: 
+                <a class="text-dark" href="#">MB</a>
+              </div>
+              <div class="col-md-auto">
+                <select class="form-select form-select-sm" aria-label="Default select example" v-model="$i18n.locale" id="locale">
+                    <option v-for="locale in $i18n.availableLocales" :value="locale">{{ locale }}</option>
+                </select>
+              </div>
             </div>
-            <LanguageSwitcher></LanguageSwitcher>
-          </div>
           </div>
         </div>
       </footer>
@@ -412,16 +416,9 @@
 
 <script>
 import emailjs from 'emailjs-com';
-import { useI18n } from 'vue-i18n'
-import LanguageSwitcher from "./components/LanguageSwitcher.vue"
-import Tr from "./i18n/translations"
 
 export default {
     name: 'App',
-    components: { LanguageSwitcher },
-    setup() {
-      return { Tr }
-    },
     data() {
       return {
         name: '',
