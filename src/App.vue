@@ -2,7 +2,7 @@
   <body>
     <main>
 
-      <div id="navCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- <div id="navCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1"></button>
@@ -17,25 +17,45 @@
             <div class="container nav">
               <div class="carousel-caption text-start row justify-content-end">
                 <div class="col align-self-start">
-                  <h1 class="h1Name navText">Vintage Vinkovic Garage.</h1>
+                  <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
                   <p class="navText">Some representative placeholder content for the first slide of the carousel.</p>
                   <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i>@something</a>
+                  data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
                   <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i>@something</a>
-                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i>@something</a>
-                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>13457879</a>
-                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                  data-mdb-ripple-color="dark"><i class="bi bi-mailbox"></i>test@gmail.com</a>
+                  data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+                  <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>+385912227332 Robert</a>
+                  <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>+385917620501 Ivan</a>
+                  <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-mailbox"></i>vintage.garage.vinkovic@gmail.com</a>
                 </div>
+                <LanguageSwitcher></LanguageSwitcher>
               </div>
             </div>
           </div>
 
         </div>
-      </div> 
+      </div>  -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <div class="col align-self-start">
+            <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
+            <p class="navText">Some representative placeholder content for the first slide of the carousel.</p>
+            <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+            <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>+385912227332 Robert</a>
+            <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>+385917620501 Ivan</a>
+            <a class="btn btn-link btn-floating btn-lg navText contact" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="bi bi-mailbox"></i>vintage.garage.vinkovic@gmail.com</a>
+          </div>          
+        </div>
+      </nav>
 
       <div class="container">
         <div class="row">
@@ -43,7 +63,7 @@
             <img src="/src/assets/images/version2/test/wedding.jpeg"
               class="rounded-circle shadow-lg imageOffers" alt="">
 
-            <h2 class="containerHeading">Vjencanja</h2>
+            <h2 class="containerHeading">{{$t('offers.weddings')}}</h2>
             <p>Unajmite vozilo i vozaca za poseban dan</p>
           </div>
           <div class="col-lg-4 offers">
@@ -351,6 +371,8 @@
       <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <div class="container pt-4">
           <div class="row align-items-center">
+            
+
             <!-- <section class="mb-4 col-sm">
               <div class="row">
               <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
@@ -410,8 +432,15 @@
         </div>
 
         <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          Created By: 
-          <a class="text-dark" href="#">MB</a>
+          <div class="container">
+            <div class="row">
+            <div class="col">
+              Created By: 
+              <a class="text-dark" href="#">MB</a>
+            </div>
+            <LanguageSwitcher></LanguageSwitcher>
+          </div>
+          </div>
         </div>
       </footer>
     </main>
@@ -420,8 +449,16 @@
 
 <script>
 import emailjs from 'emailjs-com';
+import { useI18n } from 'vue-i18n'
+import LanguageSwitcher from "./components/LanguageSwitcher.vue"
+import Tr from "./i18n/translations"
+
 export default {
-    name: 'ContactUs',
+    name: 'App',
+    components: { LanguageSwitcher },
+    setup() {
+      return { Tr }
+    },
     data() {
       return {
         name: '',
@@ -536,13 +573,19 @@ p, h1, h2, h3{
 
 @media only screen and (min-width: 249px) and (max-width: 360px) {
   .bd-placeholder-img{
-    height: 550px !important;
+    height: 480px !important;
+  }
+  .contact{
+    font-size: smaller;
   }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 449px) {
   .bd-placeholder-img{
-    height: 450px !important;
+    height: 400px !important;
+  }
+  .contact{
+    font-size: smaller;
   }
 }
 
@@ -550,11 +593,17 @@ p, h1, h2, h3{
   .bd-placeholder-img{
     height: 320px !important;
   }
+  .contact{
+    font-size: smaller;
+  }
 }
 
 @media only screen and (min-width: 521px) and (max-width: 664px) {
   .bd-placeholder-img{
-    height: 320px !important;
+    height: 280px !important;
+  }
+  .contact{
+    font-size: smaller;
   }
 }
 
@@ -562,19 +611,34 @@ p, h1, h2, h3{
   .bd-placeholder-img{
     height: 250px !important;
   }
+  .contact{
+    font-size: smaller;
+  }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1100px) {
   .bd-placeholder-img{
-    height: 250px !important;
+    height: 400px !important;
+  }
+  .contact{
+    font-size: smaller;
   }
 }
 
 
-@media only screen and (min-width: 990px) and (max-width: 1300px) {
+@media only screen and (min-width: 990px) and (max-width: 1301px) {
   .imageOffers{
     width: 250px;
     height: 200px;
+  }
+  .bd-placeholder-img{
+    height: 300px !important;
+  }
+}
+
+@media only screen and (min-width: 1302px) and (max-width: 1529px) {
+  .bd-placeholder-img{
+    height: 250px !important;
   }
 }
 
