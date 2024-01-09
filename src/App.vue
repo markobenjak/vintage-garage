@@ -26,7 +26,7 @@
             <img src="/src/assets/images/version2/test/wedding.jpeg"
               class="rounded-circle shadow-lg imageOffers" alt="">
 
-            <h2 class="containerHeading">{{ $t("weddings") }}</h2>
+            <h2 class="containerHeading">{{ $t("offers.weddings") }}</h2>
             <p>Unajmite vozilo i vozaca za poseban dan</p>
           </div>
           <div class="col-lg-4 offers">
