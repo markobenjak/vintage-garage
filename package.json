@@ -13,6 +13,8 @@
   "dependencies": {
     "@intlify/unplugin-vue-i18n": "^2.0.0",
     "@popperjs/core": "^2.11.8",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.2",
     "emailjs-com": "^3.2.0",
