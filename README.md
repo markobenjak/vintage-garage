@@ -1,7 +1,7 @@
 # Vintage Garage Vinkovic
 
 ## Overview
-This project is a web application built using Vue.js and Bootstrap, designed to provide show vintage vehicles of family ran garage.
+This project is a web application built using Vue.js and Bootstrap, designed to show vintage vehicles of a family-run garage. Vehicles are available for rent for weddings, photo shoots, movie and series filming, and special events.
 
 ## Features
 - One page
