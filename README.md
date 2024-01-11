@@ -1,29 +1,20 @@
-# vintage-garage
+# Vintage Garage Vinkovic
 
-This template should help get you started developing with Vue 3 in Vite.
+## Overview
+This project is a web application built using Vue.js and Bootstrap, designed to provide show vintage vehicles of family ran garage.
 
-## Recommended IDE Setup
+## Features
+- One page
+- English and Croatian translations
+- Email sending
+- Phone, Tablet and other screens layouts
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Technologies Used
+- Vue.js
+- Bootstrap
+- Vuelidate
+- Emailjs
+- i18n
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## Deployment
+The application is deployed and accessible at [specific URL]. You can visit the live site [here](hhttps://markobenjak.github.io/vintage-garage/).
