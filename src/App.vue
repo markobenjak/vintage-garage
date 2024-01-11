@@ -413,10 +413,10 @@
         </div>
 
         <div class="alert alert-success" v-if="showAlertSuccess" id="emailAlertSuccess" role="alert">
-          {{ alertMessage }}
+          {{ $t("alerts.emailAlertSuccess") }}
         </div>
         <div class="alert alert-danger" v-if="showAlertFail" id="emailAlertFail" role="alert">
-          {{ alertMessage }}
+          {{ $t("alerts.emailAlertFail") }}
         </div>
       </div>
 
@@ -514,7 +514,6 @@ export default {
         email: '',
         message: '',
         phone: '',
-        alertMessage: '',
         showAlertSuccess: false,
         showAlertFail: false
       }
@@ -538,14 +537,10 @@ export default {
             email: this.email,
             message: this.message
           }).then((result) => {
-            this.alertMessage = "Email uspjesno poslan. Javit cemo se u najkracem mogucem vremenu"
             this.showAlertSuccess = true;
           }, (error) => {
-            this.alertMessage = "fail"
             this.showAlertFail = true;
           });
-
-            this.alertMessage = '';
             this.name = '';
             this.email = '';
             this.message = '';

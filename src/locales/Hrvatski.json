@@ -51,5 +51,9 @@
       "message": " ne može biti prazna."
     }
   },
+  "alerts": {
+    "emailAlertSuccess": "E-mail uspješno poslan. Javit ćemo se u najkraćem mogućem vremenu.",
+    "emailAlertFail": "E-mail nije uspješno poslan. Javite se direktnim putem."
+  },
   "createdBy": "Kreirao: "
 }
