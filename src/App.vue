@@ -5,7 +5,6 @@
         <div class="container">
           <div class="col align-self-start">
             <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
-            <p class="navText aboutUs">{{ $t("aboutUs") }}</p>
           </div>          
         </div>
       </nav>
@@ -13,25 +12,25 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 offers">
-            <img src="/src/assets/images/version2/test/t1Wedding.jpg"
+            <img src="/src/assets/images/version2/offers/t1Wedding.jpg"
               class="shadow-lg p-3 mb-5 bg-body rounded imageOffers" alt="">
 
-            <h2 class="containerHeading">{{ $t("offers.weddings") }}</h2>
-            <p>Unajmite vozilo s vozačem za vaš poseban dan! Odaberite jedno od naših pet vozila koja će vam donijeti šarm prošlih vremena stvarajući nezaboravne trenutke i drugačije iskustvo s uspomenama koje će trajati vječno.</p>
+            <h2 class="containerHeading">{{ $t("offers.weddings.name") }}</h2>
+            <p>{{ $t("offers.weddings.content") }}</p>
           </div>
           <div class="col-lg-4 offers">
-            <img src="/src/assets/images/version2/test/event.jpg"
+            <img src="/src/assets/images/version2/offers/event.jpg"
               class="shadow-lg p-3 mb-5 bg-body rounded imageOffers" alt="">
 
-            <h2 class="containerHeading">Najam vozila</h2>
-            <p>Snimanje spotova, serija i filmova ili stvaranje fotoalbuma – naša vozila su spremna pozirati na svemu što stvarate</p>
+            <h2 class="containerHeading">{{ $t("offers.rental.name") }}</h2>
+            <p>{{ $t("offers.rental.content") }}</p>
           </div>
           <div class="col-lg-4 offers">
-            <img src="/src/assets/images/version2/test/buba.jpg"
+            <img src="/src/assets/images/version2/offers/buba.jpg"
               class="shadow-lg p-3 mb-5 bg-body rounded imageOffers" alt="">
 
-            <h2 class="containerHeading">Organizacija događaja</h2>
-            <p>Izložbe automobila, posebna poslovna druženja ili događaji na kojima naši auti mogu svojom elegancijom stvoriti drugačija sjećanja – nazovite nas i osigurajte jedinstven doživljaj sebi i svojim gostima.</p>
+            <h2 class="containerHeading">{{ $t("offers.events.name") }}</h2>
+            <p>{{ $t("offers.events.content") }}</p>
           </div>
         </div>
 
@@ -40,16 +39,16 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h1 class="featurette-heading">Jaguar Mk2</h1>
-            <p>Jaguar je zadnje pridružen model našoj kolekciji, a proizveden je davne 1968. godine u Ujedinjenom kraljevstvu kao luksuzna sportska limuzina bezvremenskog izgleda i vrhunske udobnosti.
+            <p>{{ $t("jaguar.jaguar_part1") }}
             </p>
             <p>
-              Englesko bijele boje i crne kožnate unutrašnjosti, Jaguar je idealna kombinacija za vjenčanje s dozom aristokratskog engleskog luksuza.
+              {{ $t("jaguar.jaguar_part2") }}
             </p>
             <p class="lead">
-              <strong>Broj mjesta: 4</strong>
+              <strong>{{ $t("seats") }} 4</strong>
             </p>
             <p class="lead">
-              <strong>Godište: 1968.</strong>
+              <strong>{{ $t("year") }} 1968.</strong>
             </p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -114,19 +113,17 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h1 class="featurette-heading">Citroen DS19</h1>
-            <p>Auto poznatiji pod imenom „Žaba“ u našoj je obitelji od 2014. godine. 
-              Predstavljen je po prvi puta 1955. godine na pariškom salonu automobila kao automobil budućnosti s razvijenim hidropneumatskim ovjesom. 
-              Zbog tog je ovjesa žaba postala pojam za udobnost.
+            <h1 class="featurette-heading">Citroën DS19</h1>
+            <p>{{ $t("citroenDS.citroenDS_part1") }}
             </p>
             <p>
-              Odlična je za mladence koji žele dodatnu udobnost tijekom vožnje jer cesta u žabi postaje kao mirno more – bez osjetnih neravnina.
+              {{ $t("citroenDS.citroenDS_part2") }}
             </p>
             <p class="lead">
-              <strong>Broj mjesta: 4</strong>
+              <strong>{{ $t("seats") }} 4</strong>
             </p>
             <p class="lead">
-              <strong>Godište: 1973.</strong>
+              <strong>{{ $t("year") }} 1973.</strong>
             </p>
           </div>
           <div class="col-md-5">
@@ -193,17 +190,16 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h1 class="featurette-heading">Citroën Traction Avant</h1>
-            <p>Najstariji model iz naše ponude, Traction Avant, došao je 2019. godine u našu garažu iz Nizozemske. 
-              Svoju karijeru vožnje mladenaca započeo je već u Nizozemskoj gdje je bio dio kolekcije za najam vozila. 
+            <p>{{ $t("cta.cta_part1") }}
             </p>
             <p>
-              Svojim dizajnom podsjeća na predratne automobile, a bezvremenske linije i ogroman prostor na stražnjoj klupi osiguravaju veliku luksuznost tijekom vožnje.
+              {{ $t("cta.cta_part2") }}
             </p>
             <p class="lead">
-              <strong>Broj mjesta: 4</strong>
+              <strong>{{ $t("seats") }} 4</strong>
             </p>
             <p class="lead">
-              <strong>Godište: 1952.</strong>
+              <strong>{{ $t("year") }} 1952.</strong>
             </p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -277,17 +273,17 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h1 class="featurette-heading">Volkswagen T1</h1>
-            <p>Volkswagen T1 kombi je svima poznat svojom pojavom – takozvani hippie van iz 60-ih godina.
-               U našoj je obitelji od 2009. godine i s njime smo napravili preko 15 000 km. 
+            <p>
+              {{ $t("t1.t1_part1") }}
             </p>
             <p>
-              Odličan je za mladence koji se žele voziti s kumovima ili prijateljima i imati malu zabavu tijekom vožnje i prije dolaska u prostor za slavlje.
+              {{ $t("t1.t1_part2") }}            
             </p>
             <p class="lead">
-              <strong>Broj mjesta: 9</strong>
+              <strong>{{ $t("seats") }} 9</strong>
             </p>
             <p class="lead">
-              <strong>Godište: 1963.</strong>
+              <strong>{{ $t("year") }} 1963.</strong>
             </p>
           </div>
           <div class="col-md-5">
@@ -360,16 +356,17 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h1 class="featurette-heading">Wolkswagen Buba</h1>
-            <p>Volkswagen model 1200, puno poznatiji pod nazivom buba, jedan je od ikona automobilizma po svojoj prepoznatljivosti.
+            <p>
+              {{ $t("buba.buba_part1") }}
             </p>
             <p>
-              Naša u potpunosti preuređena i obnovljena plava buba je iz 1963 godine, a veliki krovni otvor kao stvoren je za mladence i njihov veliki dan.
+              {{ $t("buba.buba_part2") }}
             </p>
             <p class="lead">
-              <strong>Broj mjesta: 4</strong>
+              <strong>{{ $t("seats") }} 4</strong>
             </p>
             <p class="lead">
-              <strong>Godište: 1968.</strong>
+              <strong>{{ $t("year") }} 1968.</strong>
             </p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -426,46 +423,16 @@
       <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <div class="container pt-4">
           <div class="row align-items-center">
-          
-            <section class="mb-4 col text-dark">
-              <form ref="form" style="margin: auto">
-                <h2>Kontaktirajte nas:</h2>
-                <!-- Name input -->
-                <div class="">
-                  <input type="text" id="name" name="name" v-model="name" class="form-control" required />
-                  <label class="form-label" for="name">Ime <span v-if="v$.name.$error"> ne može biti prazno.</span></label>
-                </div>
-
-                <!-- Email input -->
-                <div class="row">
-                  <div class="col">
-                    <input type="email" id="email" name="email" v-model="email" class="form-control" required />
-                    <label class="form-label" for="name">Email <span v-if="v$.email.$error"> ne može biti prazan.</span></label>
-                  </div>
-                  <div class="col">
-                    <input type="text" id="phone" name="phone" v-model="phone" class="form-control" required />
-                    <label class="form-label" for="phone">Broj</label>
-                  </div>
-                </div>
-
-                <!-- Message input -->
-                <div class="">
-                  <textarea class="form-control" id="message" v-model="message" name="message" rows="4" required></textarea>
-                  <label class="form-label" for="message">Poruka <span v-if="v$.message.$error"> ne može biti prazna.</span></label>
-                </div>
-                <!-- Submit button -->
-                <button type="button" @click="sendEmail()" data-dismiss="alert" class="form-control btn btn-lg btn-block sendButton">Pošalji</button>
-              </form>
-              
-            </section>
             <section class="mb-4 col-sm">
               <div class="col">
-                <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
-                <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
-                <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+                <h3 class="navText">Vintage Garage Vinkovic
+                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+                  <a class="btn btn-link btn-floating btn-lg navText" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+                </h3>
                 <div class="row">
+                  <p class="navText aboutUs">{{ $t("aboutUs") }}</p>
                   <a class="btn btn-floating btn-lg navText contact" href="#!" role="button"
                   data-mdb-ripple-color="dark"><i class="bi bi-phone"></i>Robert: +385912227332</a>
                   <a class="btn btn-floating btn-lg navText contact" href="#!" role="button"
@@ -475,6 +442,38 @@
                 </div>
               </div>  
             </section> 
+
+            <section class="mb-4 col text-dark">
+              <form ref="form" class="form" style="margin: auto">
+                <h2>{{ $t("form.contactUs") }}</h2>
+                <!-- Name input -->
+                <div class="">
+                  <input type="text" id="name" name="name" v-model="name" class="form-control" required />
+                  <label class="form-label" for="name">{{ $t("form.name_surname") }}<span v-if="v$.name.$error"> {{ $t("validations.form.name") }}</span></label>
+                </div>
+
+                <!-- Email input -->
+                <div class="row">
+                  <div class="col">
+                    <input type="email" id="email" name="email" v-model="email" class="form-control" required />
+                    <label class="form-label" for="name">{{ $t("form.email") }} <span v-if="v$.email.$error"> {{ $t("validations.form.email") }}</span></label>
+                  </div>
+                  <div class="col">
+                    <input type="text" id="phone" name="phone" v-model="phone" class="form-control" required />
+                    <label class="form-label" for="phone">{{ $t("form.number") }}</label>
+                  </div>
+                </div>
+
+                <!-- Message input -->
+                <div class="">
+                  <textarea class="form-control" id="message" v-model="message" name="message" rows="4" required></textarea>
+                  <label class="form-label" for="message">{{ $t("form.message") }} <span v-if="v$.message.$error">{{ $t("validations.form.message") }}</span></label>
+                </div>
+                <!-- Submit button -->
+                <button type="button" @click="sendEmail()" data-dismiss="alert" class="form-control btn btn-lg btn-block sendButton">{{ $t("form.send") }}</button>
+              </form>
+              
+            </section>
           </div>
         </div>
 
@@ -482,8 +481,8 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                Created By: 
-                <a class="text-dark" href="#">MB</a>
+                {{ $t("createdBy") }}
+                <a class="text-dark" target="_blank" href="https://markobenjak.com/">MB</a>
               </div>
               <div class="col-md-auto">
                 <select class="form-select form-select-sm" aria-label="Default select example" v-model="$i18n.locale" id="locale">
@@ -613,18 +612,31 @@ p, h1, h2, h3, a, input, label{
   font-family: didot, serif;
 }
 
+p, .contact{
+  text-align: justify;
+}
+
 .navbar, .sendButton{
   background-color: #d5dad6;
 }
 .aboutUs{
   font-weight: 500;
+  text-align: justify;
+
 }
-.contact{
-  padding: 2%;
-}
+
 .contact > i {
   padding-right: 1%;
+  padding-left: 2%;
 }
+
+@media only screen and (min-width: 249px) and (max-width: 575px) {
+  .form{
+    margin-top: 15px;
+    border-top: 1px solid #82786e;
+  }
+}
+
 @media only screen and (max-width: 750px) {
 
   .nav{

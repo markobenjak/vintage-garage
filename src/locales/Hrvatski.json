@@ -1,7 +1,55 @@
 {
-  "aboutUs": "Mi smo obitelj Vinković – Tatjana, Robert, Ivan i Lina. Krenuli smo puniti Vintage garage Vinković 2009. godine s dugo željenim Volkswagen T1 kombijem iz 1963. godine. Od tada je kroz našu garažu prošlo dosta različitih modela automobila dok nismo probrali one najdraže koji su se s nama zadržali. S oldtimerima smo sudjelovali na brojnim susretima po Hrvatskoj, ali i susjednim državama što nas je održalo kao obitelj na okupu. Stvorili smo brojna prijateljstva i poznanstva u krugovima ljubitelja oldtimera, posebice na Volkswagen i Citroen sceni jer su ipak to marke kojima smo najprivrženiji. Neke modele tih marki koji nam danas krase garažu odlučili smo ponuditi za buduće mladence kao i za različite druge događaje. ",
-  
+  "aboutUs": "Mi smo obitelj Vinković – Tatjana, Robert, Ivan i Lina. Krenuli smo puniti Vintage Garage Vinković 2009. godine s dugo željenim Volkswagen T1 kombijem iz 1963. godine. Od tada je kroz našu garažu prošlo dosta različitih modela automobila dok nismo probrali one najdraže koji su se s nama zadržali. S oldtimerima smo sudjelovali na brojnim susretima po Hrvatskoj, ali i susjednim državama što nas je održalo kao obitelj na okupu. Stvorili smo brojna prijateljstva i poznanstva u krugovima ljubitelja oldtimera, posebice na Volkswagen i Citroen sceni jer su ipak to marke kojima smo najprivrženiji. Neke modele tih marki koji nam danas krase garažu odlučili smo ponuditi za buduće mladence kao i za različite druge događaje.",
   "offers":{
-    "weddings": "Vjenčanja"
-  }
+    "weddings": {
+      "name": "Vjenčanja",
+      "content": "Unajmite vozilo s vozačem za vaš poseban dan! Odaberite jedno od naših pet vozila koja će vam donijeti šarm prošlih vremena stvarajući nezaboravne trenutke i drugačije iskustvo s uspomenama koje će trajati vječno."
+    },
+    "rental": {
+      "name": "Najam Vozila",
+      "content": "Snimanje spotova, serija i filmova ili stvaranje fotoalbuma – naša vozila su spremna pozirati na svemu što stvarate."
+    },
+    "events": {
+      "name": "Organizacija događaja",
+      "content": "Izložbe automobila, posebna poslovna druženja ili događaji na kojima naši auti mogu svojom elegancijom stvoriti drugačija sjećanja – nazovite nas i osigurajte jedinstven doživljaj sebi i svojim gostima."
+    }
+  },
+  "seats": "Broj sjedala: ",
+  "year": "Godina modela: ",
+  "jaguar": {
+    "jaguar_part1": "Jaguar je zadnje pridružen model našoj kolekciji, a proizveden je davne 1968. godine u Ujedinjenom kraljevstvu kao luksuzna sportska limuzina bezvremenskog izgleda i vrhunske udobnosti.",
+    "jaguar_part2": "Englesko bijele boje i crne kožnate unutrašnjosti, Jaguar je idealna kombinacija za vjenčanje s dozom aristokratskog engleskog luksuza."
+  },
+  "citroenDS": {
+    "citroenDS_part1": "Auto poznatiji pod imenom „Žaba“, u našoj je obitelji od 2014. godine. Predstavljen je po prvi puta 1955. godine na pariškom salonu automobila kao automobil budućnosti s razvijenim hidropneumatskim ovjesom.",
+    "citroenDS_part2": "Zbog tog je ovjesa Žaba postala pojam za udobnost. Odlična je za mladence koji žele dodatnu udobnost tijekom vožnje jer cesta u žabi postaje kao mirno more – bez osjetnih neravnina."
+  },
+  "cta": {
+    "cta_part1": "Najstariji model iz naše ponude, Traction Avant, došao je 2019. godine u našu garažu iz Nizozemske. Svoju karijeru vožnje mladenaca započeo je već u Nizozemskoj gdje je bio dio kolekcije za najam vozila.",
+    "cta_part2": "Svojim dizajnom podsjeća na predratne automobile, a bezvremenske linije i ogroman prostor na stražnjoj klupi osiguravaju veliku luksuznost tijekom vožnje."
+  },
+  "t1": {
+    "t1_part1": "Volkswagen T1 kombi je svima poznat svojom pojavom – takozvani hippie van iz 60-ih godina. U našoj je obitelji od 2009. godine i s njime smo napravili preko 15 000 km.",
+    "t1_part2": "Odličan je za mladence koji se žele voziti s kumovima ili prijateljima i imati malu zabavu tijekom vožnje i prije dolaska u prostor za slavlje."
+  },
+  "buba": {
+    "buba_part1": "Volkswagen model 1200, puno poznatiji pod nazivom Buba, jedan je od ikona automobilizma po svojoj prepoznatljivosti.",
+    "buba_part2": "Naša u potpunosti preuređena i obnovljena plava buba je iz 1963 godine, a veliki krovni otvor kao stvoren je za mladence i njihov veliki dan."
+  },
+  "form": {
+    "contactUs": "Kontaktirajte nas:",
+    "name_surname": "Ime i Prezime",
+    "email": "E-mail",
+    "number": "Broj",
+    "message": "Poruka",
+    "send": "Pošalji"
+  },
+  "validations": {
+    "form": {
+      "name": " ne mogu biti prazni.",
+      "email": " ne može biti prazan.",
+      "message": " ne može biti prazna."
+    }
+  },
+  "createdBy": "Kreirao: "
 }
