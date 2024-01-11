@@ -8,6 +8,7 @@ This project is a web application built using Vue.js and Bootstrap, designed to 
 - English and Croatian translations
 - Email sending
 - Phone, Tablet and other screens layouts
+- Deployed via GitHub Pages
 
 ## Technologies Used
 - Vue.js
@@ -16,6 +17,7 @@ This project is a web application built using Vue.js and Bootstrap, designed to 
 - Vuelidate
 - Emailjs
 - i18n
+- GitHub Pages
 
 ## Deployment
-The application is deployed and accessible at [https://markobenjak.github.io/vintage-garage/]. You can visit [Vintage Garage Vinkovic](hhttps://markobenjak.github.io/vintage-garage/) here.
+The application is deployed and accessible at [https://markobenjak.github.io/vintage-garage/]. You can visit [Vintage Garage Vinkovic](https://markobenjak.github.io/vintage-garage/) here.
