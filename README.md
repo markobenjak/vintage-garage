@@ -18,4 +18,4 @@ This project is a web application built using Vue.js and Bootstrap, designed to 
 - i18n
 
 ## Deployment
-The application is deployed and accessible at [specific URL]. You can visit the live site [here](hhttps://markobenjak.github.io/vintage-garage/).
+The application is deployed and accessible at [https://markobenjak.github.io/vintage-garage/]. You can visit [Vintage Garage Vinkovic](hhttps://markobenjak.github.io/vintage-garage/) here.
