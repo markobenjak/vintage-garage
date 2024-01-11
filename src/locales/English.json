@@ -1,0 +1,55 @@
+{
+  "aboutUs": "We are the Vinković family - Tatjana, Robert, Ivan, and Lina. We started filling the Vintage Garage Vinković in 2009 with the long-desired Volkswagen T1 van from 1963. Since then, many different car models have passed through our garage until we selected the favorite ones that have stayed with us. We participated in numerous meetings with old-timers in Croatia and neighboring countries, which kept us together as a family. We have created friendships and acquaintances in the circles of old-timer fans, especially in the Volkswagen and Citroen scene, because these are the brands we are most attached to. We have decided to offer some models of those brands that adorn our garage today for future newlyweds and various other events.",
+  "offers":{
+    "weddings": {
+      "name": "Weddings",
+      "content": "Rent a car with a driver for your special day! Choose one of our five vehicles that will bring you the charm of the past, creating unforgettable moments and a different experience with memories that will last forever."
+    },
+    "rental": {
+      "name": "Vehicle Rental",
+      "content": "Shooting videos, series, and movies or creating photo albums - our vehicles are ready to pose on everything you create."
+    },
+    "events": {
+      "name": "Event organization",
+      "content": "Car exhibits, special business gatherings, or events where our cars can create different memories with their elegance - call us and ensure a unique experience for yourself and your guests."
+    }
+  },
+  "seats": "Number of seats: ",
+  "year": "Model year: ",
+  "jaguar": {
+    "jaguar_part1": "Jaguar is the latest model added to our collection, and it was produced back in 1968 in the United Kingdom as a luxury sports sedan with a timeless look and supreme comfort.",
+    "jaguar_part2": "English white color and black leather interior, the Jaguar is ideal for a wedding with a touch of aristocratic English luxury."
+  },
+  "citroenDS": {
+    "citroenDS_part1": "The car, better known as \"Zaba\", has been in our family since 2014. It was presented for the first time in 1955 at the Paris Motor Show as a car of the future with a developed hydropneumatic suspension.",
+    "citroenDS_part2": "This is why the Zaba suspension has become a term for comfort. It is great for newlyweds who want extra comfort while driving because the road in the frog becomes like a calm sea - without noticeable bumps."
+  },
+  "cta": {
+    "cta_part1": "The oldest model from our offer, Traction Avant, came to our garage from the Netherlands in 2019. He started his career driving newlyweds in the Netherlands, where he was part of a car rental collection.",
+    "cta_part2": "Its design is reminiscent of pre-war cars, and the timeless lines and massive space on the back bench ensure great luxury while driving."
+  },
+  "t1": {
+    "t1_part1": "The Volkswagen T1 van is known to everyone by its appearance - the hippie van from the 60s. It has been in our family since 2009, and we have driven over 15,000 km.",
+    "t1_part2": "It is great for newlyweds who want to ride with their best men or friends and have a little fun during the ride and before arriving at the celebration area."
+  },
+  "buba": {
+    "buba_part1": "The Volkswagen Model 1200, better known as the Beetle, is one of the motoring icons due to its recognition.",
+    "buba_part2": "Our fully remodeled and restored Blue Beetle is from 1963, and the large sunroof is perfect for newlyweds and their big day."
+  },
+  "form": {
+    "contactUs": "Contact us:",
+    "name_surname": "Name and Surname",
+    "email": "E-mail",
+    "number": "Number",
+    "message": "Message",
+    "send": "Send"
+  },
+  "validations": {
+    "form": {
+      "name": " can not be empty.",
+      "email": " can not be empty.",
+      "message": " can not be empty."
+    }
+  },
+  "createdBy": "Created by: "
+}
