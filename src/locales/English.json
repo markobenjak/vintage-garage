@@ -55,5 +55,7 @@
     "emailAlertSuccess": "Email successfully sent. We will contact you as soon as possible.",
     "emailAlertFail": "Email was not sent successfully. Contact us directly."
   },
-  "createdBy": "Created by: "
+  "createdBy": "Created by: ",
+  "vehicles": "Our vehicles",
+  "language": "Select language"
 }

@@ -3,7 +3,7 @@
     <main>
       <nav class="navbar navbar-expand-lg shadow p-3 mb-5">
         <div class="container">
-          <div class="col align-self-start">
+          <div class="col align-self-center">
             <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
           </div>          
         </div>
@@ -35,9 +35,11 @@
         </div>
 
         <hr class="featurette-divider">
-        
+        <h1>{{ $t("vehicles") }}</h1>
+        <hr class="featurette-divider">
+
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
+          <div class="col-md-5 order-md-2">
             <h1 class="featurette-heading">Jaguar Mk2</h1>
             <p>{{ $t("jaguar.jaguar_part1") }}
             </p>
@@ -45,55 +47,36 @@
               {{ $t("jaguar.jaguar_part2") }}
             </p>
             <p class="lead">
-              <strong>{{ $t("seats") }} 4</strong>
+              <strong>{{ $t("seats") }} 2</strong>
             </p>
             <p class="lead">
               <strong>{{ $t("year") }} 1968.</strong>
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
-            <div id="jaguar" class="carousel slide shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col-md-7 order-md-1">
+            <div id="jaguar" class="carousel slide carousel-fade shadow-lg p-3 mb-5 bg-body rounded">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#jaguar" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#jaguar" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#jaguar" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#jaguar" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="7" aria-label="Slide 8"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/src/assets/images/version2/jaguar_800x563/jaguar_full.jpg" class="d-block img-fluid"
+                  <img src="/src/assets/images/version2/jaguar/jaguar_full.jpg" class="d-block img-fluid"
                     alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/jaguar_800x563/inside3.jpg"
+                  <img src="/src/assets/images/version2/jaguar/inside_front.jpg"
                     class="d-block img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/jaguar_800x563/back.jpg" class="d-block img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/jaguar_800x563/front.jpg"
+                  <img src="/src/assets/images/version2/jaguar/inside_seat.jpg"
                     class="d-block img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/jaguar_800x563/front2.jpg"
-                    class="d-block img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/jaguar_800x563/back2.jpg"
-                    class="d-block img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/jaguar_800x563/inside.jpg"
-                    class="d-block img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/jaguar_800x563/logo.jpg"
+                  <img src="/src/assets/images/version2/jaguar/logo.jpg"
                     class="d-block img-fluid" alt="...">
                 </div>
               </div>
@@ -112,83 +95,7 @@
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7">
-            <h1 class="featurette-heading">Citroën DS19</h1>
-            <p>{{ $t("citroenDS.citroenDS_part1") }}
-            </p>
-            <p>
-              {{ $t("citroenDS.citroenDS_part2") }}
-            </p>
-            <p class="lead">
-              <strong>{{ $t("seats") }} 4</strong>
-            </p>
-            <p class="lead">
-              <strong>{{ $t("year") }} 1973.</strong>
-            </p>
-          </div>
-          <div class="col-md-5">
-            <div id="CitroenDS19" class="carousel slide shadow-lg p-3 mb-5 bg-body rounded">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/src/assets/images/version2/cds/ver2_800x563/side_decorated_wedding_people.jpg"
-                    class="d-block img-fluid" alt="...">
-
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_800x563/side_decorated_wedding.jpg"
-                    class="d-block img-fluid" alt="...">
-
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_800x563/side_decorated_wedding_2.jpg"
-                    class="d-block img-fluid" alt="...">
-
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_800x563/doors_open_2.jpg" class="d-block img-fluid"
-                    alt="...">
-
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_800x563/doors_open.jpg" class="d-block img-fluid"
-                    alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_800x563/event_back.jpg" class="d-block img-fluid"
-                    alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_800x563/event_side_2.jpg" class="d-block img-fluid"
-                    alt="...">
-
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#CitroenDS19" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#CitroenDS19" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
+          <div class="col-md-5 order-md-1">
             <h1 class="featurette-heading">Citroën Traction Avant</h1>
             <p>{{ $t("cta.cta_part1") }}
             </p>
@@ -196,14 +103,14 @@
               {{ $t("cta.cta_part2") }}
             </p>
             <p class="lead">
-              <strong>{{ $t("seats") }} 4</strong>
+              <strong>{{ $t("seats") }} 2</strong>
             </p>
             <p class="lead">
               <strong>{{ $t("year") }} 1952.</strong>
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
-            <div id="tractionAvant" class="carousel slide shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col-md-7 order-md-1">
+            <div id="tractionAvant" class="carousel slide carousel-fade shadow-lg p-3 mb-5 bg-body rounded">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#tractionAvant" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Slide 1"></button>
@@ -213,45 +120,39 @@
                 <button type="button" data-bs-target="#tractionAvant" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#tractionAvant" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 <button type="button" data-bs-target="#tractionAvant" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#tractionAvant" data-bs-slide-to="7" aria-label="Slide 8"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/event_front.jpg" class="d-block img-fluid"
+                  <img src="/src/assets/images/version2/cta/ver2_1080x810/event_front.jpg" class="d-block img-fluid"
                     alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/wedding_decorated_side.jpg"
+                  <img src="/src/assets/images/version2/cta/ver2_1080x810/wedding_decorated_side.jpg"
                     class="d-block img-fluid" alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/front.jpg" class="d-block img-fluid" alt="...">
+                  <img src="/src/assets/images/version2/cta/ver2_1080x810/front.jpg" class="d-block img-fluid" alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/wedding_decorated_back.jpg"
+                  <img src="/src/assets/images/version2/cta/ver2_1080x810/wedding_decorated_back.jpg"
                     class="d-block img-fluid" alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/wedding_decorated_front_2.jpg"
+                  <img src="/src/assets/images/version2/cta/ver2_1080x810/wedding_decorated_front_2.jpg"
                     class="d-block img-fluid" alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/wedding_decorated_front.jpg"
+                  <img src="/src/assets/images/version2/cta/ver2_1080x810/wedding_decorated_front.jpg"
                     class="d-block img-fluid" alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/wedding_decorated_side_2.jpg"
-                    class="d-block img-fluid" alt="...">
-
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cta/ver2_800x563/wedding_decorated_side_3.jpg"
+                  <img src="/src/assets/images/version2/cta/ver2_1080x810/wedding_decorated_side_2.jpg"
                     class="d-block img-fluid" alt="...">
 
                 </div>
@@ -271,7 +172,7 @@
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7">
+          <div class="col-md-5  order-md-1">
             <h1 class="featurette-heading">Volkswagen T1</h1>
             <p>
               {{ $t("t1.t1_part1") }}
@@ -280,15 +181,14 @@
               {{ $t("t1.t1_part2") }}            
             </p>
             <p class="lead">
-              <strong>{{ $t("seats") }} 9</strong>
+              <strong>{{ $t("seats") }} 6</strong>
             </p>
             <p class="lead">
               <strong>{{ $t("year") }} 1963.</strong>
             </p>
           </div>
-          <div class="col-md-5">
-
-            <div id="VT1" class="carousel slide shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col-md-7">
+            <div id="VT1" class="carousel slide carousel-fade shadow-lg p-3 mb-5 bg-body rounded">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#VT1" data-bs-slide-to="0" class="active" aria-current="true"
                   aria-label="Slide 1"></button>
@@ -296,47 +196,32 @@
                 <button type="button" data-bs-target="#VT1" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#VT1" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#VT1" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#VT1" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#VT1" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#VT1" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#VT1" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#VT1" data-bs-slide-to="5" aria-label="Slide 5"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_2.jpg" class="d-block img-fluid"
+                  <img src="/src/assets/images/version2/t1/ver2_2148x1210/decorated_wedding_2.jpg" class="d-block img-fluid"
                     alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_3.jpg" class="d-block img-fluid"
-                    alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_couple_2.jpg"
+                  <img src="/src/assets/images/version2/t1/ver2_2148x1210/decorated_wedding_couple.jpg"
                     class="d-block img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_couple.jpg"
+                  <img src="/src/assets/images/version2/t1/ver2_2148x1210/decorated_wedding_front_dark.jpg"
                     class="d-block img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_front_dark.jpg"
+                  <img src="/src/assets/images/version2/t1/ver2_2148x1210/decorated_wedding_inside.jpg"
                     class="d-block img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_inside.jpg"
+                  <img src="/src/assets/images/version2/t1/ver2_2148x1210/decorated_wedding_logo.jpg"
                     class="d-block img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_logo.jpg"
+                  <img src="/src/assets/images/version2/t1/ver2_2148x1210/decorated_wedding_side.jpg"
                     class="d-block img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding_side.jpg"
-                    class="d-block img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/t1/ver2_800x563/decorated_wedding.jpg" class="d-block img-fluid"
-                    alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#VT1" data-bs-slide="prev">
@@ -354,8 +239,78 @@
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h1 class="featurette-heading">Wolkswagen Buba</h1>
+          <div class="col-md-5">
+            <h1 class="featurette-heading">Citroën DS19</h1>
+            <p>{{ $t("citroenDS.citroenDS_part1") }}
+            </p>
+            <p>
+              {{ $t("citroenDS.citroenDS_part2") }}
+            </p>
+            <p class="lead">
+              <strong>{{ $t("seats") }} 2</strong>
+            </p>
+            <p class="lead">
+              <strong>{{ $t("year") }} 1973.</strong>
+            </p>
+          </div>
+          <div class="col-md-7">
+            <div id="CitroenDS19" class="carousel carousel-fade slide shadow-lg p-3 mb-5 bg-body rounded">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding_people.jpg"
+                    class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding.jpg"
+                    class="d-block w-100" alt="...">
+
+                </div>s
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding_2.jpg"
+                    class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open_2.jpg" class="d-block w-100"
+                    alt="...">
+
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open.jpg" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/dsc_8609.jpg" class="d-block w-100" 
+                    alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#CitroenDS19" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#CitroenDS19" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-5 order-md-2">
+            <h1 class="featurette-heading">Volkswagen Buba</h1>
             <p>
               {{ $t("buba.buba_part1") }}
             </p>
@@ -363,14 +318,14 @@
               {{ $t("buba.buba_part2") }}
             </p>
             <p class="lead">
-              <strong>{{ $t("seats") }} 4</strong>
+              <strong>{{ $t("seats") }} 2</strong>
             </p>
             <p class="lead">
-              <strong>{{ $t("year") }} 1968.</strong>
+              <strong>{{ $t("year") }} 1963.</strong>
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
-            <div id="buba" class="carousel slide shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col-md-6 order-md-1">
+            <div id="buba" class="carousel slide carousel-fade shadow-lg p-3 mb-5 bg-body rounded">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#buba" data-bs-slide-to="0" class="active" aria-current="true"
                   aria-label="Slide 1"></button>
@@ -380,17 +335,17 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/src/assets/images/version2/buba/decorated_wedding_front.jpg" class="d-block img-fluid"
-                    alt="...">
-
-                </div>
-                <div class="carousel-item">
                   <img src="/src/assets/images/version2/buba/decorated_wedding_front_2.jpg" class="d-block img-fluid"
                     alt="...">
 
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/buba/decorated_wedding_front_3.jpg" class="d-block img-fluid"
+                    alt="...">
+
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/buba/decorated_wedding.jpg" class="d-block img-fluid"
                     alt="...">
 
                 </div>
@@ -485,9 +440,25 @@
                 <a class="text-dark" target="_blank" href="https://markobenjak.com/">MB</a>
               </div>
               <div class="col-md-auto">
-                <select class="form-select form-select-sm" aria-label="Default select example" v-model="$i18n.locale" id="locale">
-                    <option v-for="locale in $i18n.availableLocales" :value="locale">{{ locale }}</option>
-                </select>
+                <div class="dropdown">
+                  <button class="btn btn-light dropdown-toggle" type="button" id="LanguageButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img v-if="$i18n.locale === 'English'" src="/src/assets/images/English.png" class="imageButton"/>
+                    <img v-if="$i18n.locale === 'Hrvatski'" src="/src/assets/images/Hrvatski.png" class="imageButton"/>
+                    {{ $i18n.locale }}
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="LanguageButton">
+                    <li>
+                      <a @click="setLocale('Hrvatski')" class="dropdown-item">
+                        <img src="/src/assets/images/Hrvatski.png"/>
+                        Hrvatski
+                      </a>
+                      <a @click="setLocale('English')" class="dropdown-item">
+                        <img src="/src/assets/images/English.png"/>
+                        English
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -526,6 +497,9 @@ export default {
       }
     },
     methods: {
+      setLocale(locale) {
+        this.$i18n.locale = locale;
+      },
       async sendEmail() {
         const isFormCorrect = await this.v$.$validate()
 
@@ -558,6 +532,10 @@ export default {
 
 <style scoped>
 
+.imageButton{
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .container {
   margin-top: 1%;
 }
@@ -575,7 +553,7 @@ export default {
   color: #82786e !important;
 }
 
-.navText, .containerHeading, .offers,  .featurette > div > p, .sendButton, h2, label, input, textarea {
+.navText, .containerHeading, .offers,  .featurette > div > p, .sendButton, h2, label, input, textarea, h1 {
   color: #82786e !important;
 }
 
@@ -594,16 +572,15 @@ export default {
   margin-right: auto;
   display: block;
 }
-
-
 .btn{
   padding-left: 0 !important;
 }
 .h1Name{
   font-weight: bold;
   font-size: 45px;
+  text-align: center;
 }
-p, h1, h2, h3, a, input, label{
+p, h1, h2, h3, a, input, label, button{
   font-family: didot, serif;
 }
 
@@ -619,7 +596,6 @@ p, .contact{
   text-align: justify;
 
 }
-
 .contact > i {
   padding-right: 1%;
   padding-left: 2%;

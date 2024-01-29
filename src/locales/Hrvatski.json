@@ -14,7 +14,7 @@
       "content": "Izložbe automobila, posebna poslovna druženja ili događaji na kojima naši auti mogu svojom elegancijom stvoriti drugačija sjećanja – nazovite nas i osigurajte jedinstven doživljaj sebi i svojim gostima."
     }
   },
-  "seats": "Broj sjedala: ",
+  "seats": "Broj mjesta: ",
   "year": "Godina modela: ",
   "jaguar": {
     "jaguar_part1": "Jaguar je zadnje pridružen model našoj kolekciji, a proizveden je davne 1968. godine u Ujedinjenom kraljevstvu kao luksuzna sportska limuzina bezvremenskog izgleda i vrhunske udobnosti.",
@@ -55,5 +55,7 @@
     "emailAlertSuccess": "E-mail uspješno poslan. Javit ćemo se u najkraćem mogućem vremenu.",
     "emailAlertFail": "E-mail nije uspješno poslan. Javite se direktnim putem."
   },
-  "createdBy": "Kreirao: "
+  "createdBy": "Kreirao: ",
+  "vehicles": "Naša vozila",
+  "language": "Odaberite jezik"
 }
