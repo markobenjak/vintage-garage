@@ -5,7 +5,23 @@
         <div class="container">
           <div class="col align-self-center">
             <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
-          </div>          
+            <ul class="nav nav-pills">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdownSize" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <i class="bi bi-car-front"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#JaguarMk2">Jaguar Mk2</a></li>
+                  <li><a class="dropdown-item" href="#CTA">Citroën Traction Avant</a></li>
+                  <li><a class="dropdown-item" href="#T1">Volkswagen T1</a></li>
+                  <li><a class="dropdown-item" href="#CDS">Citroën DS19</a></li>
+                  <li><a class="dropdown-item" href="#Buba">Volkswagen Buba</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#Contact">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -40,7 +56,7 @@
 
         <div class="row featurette">
           <div class="col-md-5 order-md-2">
-            <h1 class="featurette-heading">Jaguar Mk2</h1>
+            <a id="JaguarMk2"><h1 class="featurette-heading">Jaguar Mk2</h1></a>
             <p>{{ $t("jaguar.jaguar_part1") }}
             </p>
             <p>
@@ -96,7 +112,7 @@
 
         <div class="row featurette">
           <div class="col-md-5 order-md-1">
-            <h1 class="featurette-heading">Citroën Traction Avant</h1>
+            <a id="CTA"><h1 class="featurette-heading">Citroën Traction Avant</h1></a>
             <p>{{ $t("cta.cta_part1") }}
             </p>
             <p>
@@ -173,7 +189,7 @@
 
         <div class="row featurette">
           <div class="col-md-5  order-md-1">
-            <h1 class="featurette-heading">Volkswagen T1</h1>
+            <a id="T1"><h1 class="featurette-heading">Volkswagen T1</h1></a>
             <p>
               {{ $t("t1.t1_part1") }}
             </p>
@@ -240,7 +256,7 @@
 
         <div class="row featurette">
           <div class="col-md-5">
-            <h1 class="featurette-heading">Citroën DS19</h1>
+            <a id="CDS"><h1 class="featurette-heading">Citroën DS19</h1></a>
             <p>{{ $t("citroenDS.citroenDS_part1") }}
             </p>
             <p>
@@ -310,7 +326,7 @@
 
         <div class="row featurette">
           <div class="col-md-5 order-md-2">
-            <h1 class="featurette-heading">Volkswagen Buba</h1>
+            <a id="Buba"><h1 class="featurette-heading">Volkswagen Buba</h1></a>
             <p>
               {{ $t("buba.buba_part1") }}
             </p>
@@ -400,7 +416,7 @@
 
             <section class="mb-4 col text-dark">
               <form ref="form" class="form" style="margin: auto">
-                <h2>{{ $t("form.contactUs") }}</h2>
+                <a id="Contact"><h2>{{ $t("form.contactUs") }}</h2></a>
                 <!-- Name input -->
                 <div class="">
                   <input type="text" id="name" name="name" v-model="name" class="form-control" required />
@@ -464,6 +480,13 @@
           </div>
         </div>
       </footer>
+      <div id="pagetop" style="position: fixed;" class="bottom-0 end-0" v-show="scY > 300" @click="toTop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+           stroke="#4a5568"
+           stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </div>
     </main>
   </body>
 </template>
@@ -486,7 +509,9 @@ export default {
         message: '',
         phone: '',
         showAlertSuccess: false,
-        showAlertFail: false
+        showAlertFail: false,
+        scTimer: 0,
+        scY: 0,
       }
     },
     validations () {
@@ -496,9 +521,26 @@ export default {
         message: {required}
       }
     },
+    mounted(){
+      window.addEventListener('scroll', this.handleScroll);
+    },
     methods: {
       setLocale(locale) {
         this.$i18n.locale = locale;
+      },
+      handleScroll() {
+        if (this.scTimer) return;
+        this.scTimer = setTimeout(() => {
+          this.scY = window.scrollY;
+          clearTimeout(this.scTimer);
+          this.scTimer = 0;
+        }, 100);
+      },
+      toTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
       },
       async sendEmail() {
         const isFormCorrect = await this.v$.$validate()
@@ -553,8 +595,12 @@ export default {
   color: #82786e !important;
 }
 
-.navText, .containerHeading, .offers,  .featurette > div > p, .sendButton, h2, label, input, textarea, h1 {
+.navText, .containerHeading, .offers,  .featurette > div > p, .sendButton, h2, label, input, textarea, h1, .nav-link, li > a {
   color: #82786e !important;
+}
+
+.nav-link{
+  padding: 0;
 }
 
 .featurette-heading {
@@ -580,7 +626,14 @@ export default {
   font-size: 45px;
   text-align: center;
 }
-p, h1, h2, h3, a, input, label, button{
+
+.dropdownSize{
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+}
+
+p, h1, h2, h3, a, input, label, button, li, a{
   font-family: didot, serif;
 }
 
