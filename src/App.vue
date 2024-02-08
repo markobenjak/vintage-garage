@@ -4,7 +4,8 @@
       <nav class="navbar navbar-expand-lg shadow p-3 mb-5">
         <div class="container">
           <div class="col align-self-center">
-            <h1 class="h1Name navText">Vintage Garage Vinkovic</h1>
+            <img src="/src/assets/images/logo.png" class="d-block img-fluid mx-auto"
+                    alt="...">
             <ul class="nav nav-pills">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdownSize" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
@@ -621,11 +622,6 @@ export default {
 .btn{
   padding-left: 0 !important;
 }
-.h1Name{
-  font-weight: bold;
-  font-size: 45px;
-  text-align: center;
-}
 
 .dropdownSize{
   font-weight: 600;
@@ -664,12 +660,9 @@ p, .contact{
 @media only screen and (max-width: 750px) {
 
   .nav{
-    margin-top: 5%;
+    /* margin-top: 5%; */
   }
-  .h1Name{
-    font-weight: bold;
-    font-size: xx-large;
-  }
+
   .contact{
     font-size: medium;
   }
