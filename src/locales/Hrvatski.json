@@ -40,7 +40,7 @@
     "contactUs": "Kontaktirajte nas:",
     "name_surname": "Ime i Prezime",
     "email": "E-mail",
-    "number": "Broj",
+    "number": "Broj telefona",
     "message": "Poruka",
     "send": "Pošalji"
   },
@@ -58,5 +58,6 @@
   "createdBy": "Kreirao: ",
   "vehicles": "Naša vozila",
   "language": "Odaberite jezik",
-  "nav_vehicles": "Vozila"
+  "nav_vehicles": "Vozila",
+  "contactUsNav": "Kontaktirajte nas"
 }

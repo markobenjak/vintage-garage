@@ -40,7 +40,7 @@
     "contactUs": "Contact us:",
     "name_surname": "Name and Surname",
     "email": "E-mail",
-    "number": "Number",
+    "number": "Telephone number",
     "message": "Message",
     "send": "Send"
   },
@@ -58,5 +58,6 @@
   "createdBy": "Created by: ",
   "vehicles": "Our vehicles",
   "language": "Select language",
-  "nav_vehicles": "Vehicles"
+  "nav_vehicles": "Vehicles",
+  "contactUsNav": "Contact us"
 }

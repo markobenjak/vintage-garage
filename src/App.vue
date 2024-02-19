@@ -18,7 +18,7 @@
                   <li><a class="dropdown-item" href="#CDS">Citroën DS19</a></li>
                   <li><a class="dropdown-item" href="#Buba">Volkswagen Buba</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#Contact">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#Contact">{{ $t("contactUsNav") }}</a></li>
                 </ul>
               </li>
             </ul>
