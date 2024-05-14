@@ -1,7 +1,6 @@
 <template>
   <body>
-    <main>
-      <nav class="navbar navbar-expand-lg shadow p-3 mb-5">
+    <nav class="navbar navbar-expand-lg shadow p-3 mb-5">
         <div class="container">
           <div class="col align-self-center">
             <img src="/src/assets/images/logo.png" class="d-block img-fluid mx-auto"
@@ -25,6 +24,9 @@
           </div>
         </div>
       </nav>
+
+    <main>
+
 
       <div class="container">
         <div class="row">
@@ -291,7 +293,7 @@
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding.jpg"
                     class="d-block w-100" alt="...">
 
-                </div>s
+                </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding_2.jpg"
                     class="d-block w-100" alt="...">
@@ -575,6 +577,30 @@ export default {
 
 <style scoped>
 
+main{
+  /* background:
+      radial-gradient(27% 29% at right, #0000 83%,#714b13 85% 99%,#0000 101%) calc(28px/2) 28px,
+      radial-gradient(27% 29% at left, #0000 83%,#714b13 85% 99%,#0000 101%) calc(28px/-2) 28px,
+      radial-gradient(29% 27% at top, #0000 83%,#714b13 85% 99%,#0000 101%) 0 calc(28px/2),
+      radial-gradient(29% 27% at bottom, #0000 83%,#714b13 85% 99%,#0000 101%) 0 calc(28px/-2)
+      #eae6d7;
+background-size: 56px 56px; */
+background-color: #f7f4f0;
+opacity: 1;
+background-image:  radial-gradient(#d8c6ad 1.8px, transparent 1.8px), radial-gradient(#d8c6ad 1.8px, #f7f4f0 1.8px);
+background-size: 72px 72px;
+background-position: 0 0,36px 36px;
+  }
+
+  /* .offers > p, h2{
+    background-color: #ece5db;
+  }
+
+  .offers > h2{
+    padding-bottom: 2%;
+  } */
+  
+
 .imageButton{
   padding-right: 10px;
   padding-left: 10px;
@@ -597,7 +623,7 @@ export default {
 }
 
 .navText, .containerHeading, .offers,  .featurette > div > p, .sendButton, h2, label, input, textarea, h1, .nav-link, li > a {
-  color: #82786e !important;
+  color: #41372f !important;
 }
 
 .nav-link{
@@ -630,7 +656,8 @@ export default {
 }
 
 p, h1, h2, h3, a, input, label, button, li, a{
-  font-family: didot, serif;
+  font-family: andale mono, monospace;
+
 }
 
 p, .contact{
@@ -638,7 +665,9 @@ p, .contact{
 }
 
 .navbar, .sendButton{
-  background-color: #d5dad6;
+  background-color: #ce9d66b0;
+  margin-bottom: -10px !important;
+
 }
 .aboutUs{
   font-weight: 500;
