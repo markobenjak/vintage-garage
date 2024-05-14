@@ -54,7 +54,7 @@
         </div>
 
         <hr class="featurette-divider">
-        <h1>{{ $t("vehicles") }}</h1>
+        <h1 class="ourVehicles">{{ $t("vehicles") }}</h1>
         <hr class="featurette-divider">
 
         <div class="row featurette">
@@ -286,30 +286,30 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding_people.jpg"
-                    class="d-block w-100" alt="...">
+                    class="d-block img-fluid w-100" alt="...">
 
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding.jpg"
-                    class="d-block w-100" alt="...">
+                    class="d-block img-fluid w-100" alt="...">
 
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding_2.jpg"
-                    class="d-block w-100" alt="...">
+                    class="d-block img-fluid w-100" alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open_2.jpg" class="d-block w-100"
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open_2.jpg" class="d-block img-fluid w-100"
                     alt="...">
 
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open.jpg" class="d-block w-100"
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open.jpg" class="d-block img-fluid w-100"
                     alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/dsc_8609.jpg" class="d-block w-100" 
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/dsc_8609.jpg" class="d-block img-fluid w-100" 
                     alt="...">
                 </div>
               </div>
@@ -577,6 +577,11 @@ export default {
 
 <style scoped>
 
+.ourVehicles{
+  text-align: center;
+  font-size: 2.7rem;
+}
+
 main{
   /* background:
       radial-gradient(27% 29% at right, #0000 83%,#714b13 85% 99%,#0000 101%) calc(28px/2) 28px,
@@ -618,11 +623,17 @@ background-position: 0 0,36px 36px;
   padding-left: 3%;
 }
 
-.featurette-divider {
-  color: #82786e !important;
+/* .featurette-divider {
+  border-top: 8px solid #583503;
+  border-radius: 5px;
+} */
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.navText, .containerHeading, .offers,  .featurette > div > p, .sendButton, h2, label, input, textarea, h1, .nav-link, li > a {
+.navText, .offers,  .featurette > div > p, .sendButton, h2, label, input, textarea, h1, .nav-link, li > a {
   color: #41372f !important;
 }
 
@@ -630,8 +641,10 @@ background-position: 0 0,36px 36px;
   padding: 0;
 }
 
-.featurette-heading {
-  color: #82786e !important;
+.featurette-heading, .containerHeading, .ourVehicles {
+  /* color: #82786e !important; */
+  color: #685e50 !important;
+  font-weight: bold;
 }
 
 .offers, .featurette {
@@ -678,6 +691,11 @@ p, .contact{
   padding-right: 1%;
   padding-left: 2%;
 }
+
+.rounded, .img-fluid{
+  border-radius: 15px !important;
+}
+
 
 @media only screen and (min-width: 249px) and (max-width: 575px) {
   .form{
