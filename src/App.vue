@@ -8,7 +8,8 @@
             <ul class="nav nav-pills">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdownSize" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                  <i class="bi bi-car-front"></i>
+                  <!-- <i class="bi bi-car-front"></i> -->
+                  <img style="width: 50%;" src="/src/assets/images/car_icon2.png">
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#JaguarMk2">Jaguar Mk2</a></li>
@@ -26,27 +27,27 @@
       </nav>
 
     <main>
-
+        <!-- TODO dodati slike, kupiti domenu -->
 
       <div class="container">
         <div class="row">
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/offers/t1Wedding.jpg"
-              class="shadow-lg p-3 mb-5 bg-body rounded imageOffers" alt="">
+              class="shadow-lg p-2 mb-5 bg-body rounded imageOffers" alt="">
 
             <h2 class="containerHeading">{{ $t("offers.weddings.name") }}</h2>
             <p>{{ $t("offers.weddings.content") }}</p>
           </div>
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/offers/event.jpg"
-              class="shadow-lg p-3 mb-5 bg-body rounded imageOffers" alt="">
+              class="shadow-lg p-2 mb-5 bg-body rounded imageOffers" alt="">
 
             <h2 class="containerHeading">{{ $t("offers.rental.name") }}</h2>
             <p>{{ $t("offers.rental.content") }}</p>
           </div>
           <div class="col-lg-4 offers">
             <img src="/src/assets/images/version2/offers/buba.jpg"
-              class="shadow-lg p-3 mb-5 bg-body rounded imageOffers" alt="">
+              class="shadow-lg p-2 mb-5 bg-body rounded imageOffers" alt="">
 
             <h2 class="containerHeading">{{ $t("offers.events.name") }}</h2>
             <p>{{ $t("offers.events.content") }}</p>
@@ -80,11 +81,20 @@
                 <button type="button" data-bs-target="#jaguar" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#jaguar" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#jaguar" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#jaguar" data-bs-slide-to="8" aria-label="Slide 9"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/src/assets/images/version2/jaguar/jaguar_full.jpg" class="d-block img-fluid"
-                    alt="...">
+                  <img src="/src/assets/images/version2/jaguar/jaguar_front_right.jpg"
+                    class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/jaguar/jaguar_back_left.jpg"
+                    class="d-block img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/jaguar/inside_front.jpg"
@@ -97,6 +107,22 @@
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/jaguar/logo.jpg"
                     class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/jaguar/jaguar_back_left_2.jpg"
+                    class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/jaguar/jaguar_back_right.jpg"
+                    class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/jaguar/jaguar_front_right_2.jpg"
+                    class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/jaguar/jaguar_full.jpg" class="d-block img-fluid"
+                    alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#jaguar" data-bs-slide="prev">
@@ -282,27 +308,43 @@
                 <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#CitroenDS19" data-bs-slide-to="9" aria-label="Slide 10"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding_people.jpg"
                     class="d-block img-fluid w-100" alt="...">
-
-                </div>
-                <div class="carousel-item">
-                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding.jpg"
-                    class="d-block img-fluid w-100" alt="...">
-
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/side_decorated_wedding_2.jpg"
                     class="d-block img-fluid w-100" alt="...">
-
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/left_2.jpg"
+                    class="d-block img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/front.jpg"
+                    class="d-block img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/front_right.jpg"
+                    class="d-block img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/front_right_2.jpg"
+                    class="d-block img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/cds/ver2_1500x1000/back_right.jpg"
+                    class="d-block img-fluid w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open_2.jpg" class="d-block img-fluid w-100"
                     alt="...">
-
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/cds/ver2_1500x1000/doors_open.jpg" class="d-block img-fluid w-100"
@@ -678,7 +720,7 @@ p, .contact{
 }
 
 .navbar, .sendButton{
-  background-color: #ce9d66b0;
+  background-color: #bb9365b0;
   margin-bottom: -10px !important;
 
 }
