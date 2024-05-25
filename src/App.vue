@@ -27,8 +27,6 @@
       </nav>
 
     <main>
-        <!-- TODO dodati slike, kupiti domenu -->
-
       <div class="container">
         <div class="row">
           <div class="col-lg-4 offers">
