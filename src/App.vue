@@ -391,6 +391,7 @@
                 <button type="button" data-bs-target="#buba" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#buba" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#buba" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#buba" data-bs-slide-to="4" aria-label="Slide 5"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -410,6 +411,11 @@
                 </div>
                 <div class="carousel-item">
                   <img src="/src/assets/images/version2/buba/decorated_wedding_back.jpg" class="d-block img-fluid"
+                    alt="...">
+
+                </div>
+                <div class="carousel-item">
+                  <img src="/src/assets/images/version2/buba/buba_front.jpg" class="d-block img-fluid"
                     alt="...">
 
                 </div>
